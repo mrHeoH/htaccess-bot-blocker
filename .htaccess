@@ -1,0 +1,925 @@
+# Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
+RewriteCond %{HTTP_USER_AGENT} ^(.*)zgrab(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)python-requests(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)python(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)go-http-client(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)fasthttp(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)CensysInspect(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Hello(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)ALittle(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)tchelebi(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)statdom(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)AhrefsBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)curl(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)NiggaBalls(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)DataForSeoBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)2ip(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Bytespider(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)keys-so-bot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)SemrushBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)serpstatbot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)infrawatch(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)netcraft(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)MyScript(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)MJ12bot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)t3versionsBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Indy\ Library(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)WPScan(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)PyCurl(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)PetalBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Dataprovider(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)ThreatView(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Nutch(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)000000000(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)FunWebProducts(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)DotBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)iPod(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)360Spider(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)facebookexternalhit(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)SM-G892A(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)WebCopier(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)HTTrack(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Teleport(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)zyborg(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)wp_is_mobile(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)magpie-crawler(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)ChatGPT(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)robots-txt-checker(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)BLEXBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)SeznamBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)SeekportBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Applebot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Miniflux(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Buck(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)wpbot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)VelenPublicWebCrawler(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)NetpeakCheckerBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)statdom\.ru(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Java(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)GetIntent(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)BitSightBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Dalvik(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Apache(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)scanner(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)BackupLand(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)CCBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)HeadlessChrome(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)KStandBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)AwarioBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)leakix\.net(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)ads\.txt(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)MegaIndex\.ru(.*)$ [NC]
+RewriteRule ^.*$ - [R=403,L]
+
+Order Allow,Deny
+Allow from All
+
+# Сканеры сайта
+deny from 3.128.0.0/9
+deny from 3.16.0.0/13
+deny from 4.192.0.0/10
+deny from 13.64.0.0/11
+deny from 13.96.0.0/13
+deny from 13.104.0.0/14
+deny from 13.208.0.0/12
+deny from 13.224.0.0/12
+deny from 13.200.0.0/13
+deny from 20.192.0.0/10
+deny from 20.160.0.0/12
+deny from 20.193.131.12
+deny from 20.0.0.0/11
+deny from 20.36.0.0/14
+deny from 20.40.0.0/13
+deny from 20.48.0.0/12
+deny from 20.33.0.0/16
+deny from 20.34.0.0/15
+deny from 20.128.0.0/16
+deny from 20.64.0.0/10
+deny from 23.96.0.0/13
+deny from 23.105.224.0/19
+deny from 34.32.0.0/11
+deny from 34.192.0.0/10
+deny from 35.80.0.0/12
+deny from 35.71.128.0/17
+deny from 35.71.64.0/18
+deny from 35.72.0.0/13
+deny from 37.19.206.0/23
+deny from 40.74.0.0/15
+deny from 40.76.0.0/14
+deny from 40.80.0.0/12
+deny from 40.96.0.0/12
+deny from 40.112.0.0/13
+deny from 40.120.0.0/14
+deny from 40.124.0.0/16
+deny from 40.125.0.0/17
+deny from 45.11.144.0/20
+deny from 45.11.160.0/19
+deny from 45.11.192.0/18
+deny from 45.12.0.0/14
+deny from 45.80.0.0/13
+deny from 45.88.0.0/17
+deny from 45.88.128.0/18
+deny from 45.88.192.0/20
+deny from 45.88.208.0/21
+deny from 45.136.56.0/22
+deny from 45.145.116.0/22
+deny from 45.152.116.0/23
+deny from 47.254.0.0/16
+deny from 52.145.0.0/16
+deny from 52.146.0.0/15
+deny from 52.148.0.0/14
+deny from 52.152.0.0/13
+deny from 52.160.0.0/11
+deny from 74.234.0.0/15
+deny from 74.226.128.0/19
+deny from 79.137.194.0/23
+deny from 84.239.16.0/23
+deny from 89.117.72.0/21
+deny from 89.187.160.0/19
+deny from 91.92.240.0/20
+deny from 103.15.235.0/24
+deny from 103.54.56.0/22
+deny from 103.77.214.0/23
+deny from 123.186.0.0/17
+deny from 134.209.0.0/16
+deny from 137.184.0.0/16
+deny from 143.198.0.0/16
+deny from 146.70.0.0/16
+deny from 146.190.0.0/16
+deny from 154.26.128.0/20
+deny from 155.4.0.0/16
+deny from 157.90.0.0/16
+deny from 168.138.0.0/16
+deny from 162.55.0.0/16
+deny from 170.106.0.0/16
+deny from 178.128.96.0/20
+deny from 178.128.240.0/20
+deny from 185.5.251.0/24
+deny from 185.31.210.0/24
+deny from 185.86.93.0/24
+deny from 188.130.188.0/23
+deny from 185.173.39.0/24
+deny from 185.153.196.0/22
+deny from 185.153.151.0/24
+deny from 185.156.46.0/24
+deny from 185.164.121.0/24
+deny from 192.42.116.0/22
+deny from 193.32.126.0/23
+deny from 193.176.211.0/24
+deny from 194.38.20.0/24
+deny from 195.181.160.0/20
+deny from 199.168.96.0/21
+deny from 204.12.192.0/18
+deny from 205.210.31.0/24
+deny from 217.23.14.0/24
+deny from 217.160.144.0/22
+deny from 217.160.148.0/23
+deny from 221.8.0.0/14
+
+# DigitalOcean
+deny from 5.101.96.0/20
+deny from 24.144.64.0/18
+deny from 24.199.64.0/18
+deny from 37.139.0.0/19
+deny from 45.55.0.0/16
+deny from 46.101.0.0/16
+deny from 64.23.128.0/17
+deny from 64.225.0.0/17
+deny from 64.226.64.0/18
+deny from 64.227.0.0/17
+deny from 64.227.128.0/18
+deny from 67.205.128.0/18
+deny from 67.207.64.0/19
+deny from 68.183.0.0/16
+deny from 69.55.48.0/22
+deny from 69.55.54.0/23
+deny from 69.55.58.0/23
+deny from 69.55.60.0/22
+deny from 80.240.128.0/20
+deny from 82.196.0.0/20
+deny from 93.158.64.0/18
+deny from 94.158.190.0/24
+deny from 95.85.0.0/18
+deny from 103.253.144.0/22
+deny from 104.131.0.0/16
+deny from 104.236.0.0/16
+deny from 104.248.0.0/16
+deny from 107.170.0.0/16
+deny from 122.136.0.0/13
+deny from 128.199.0.0/16
+deny from 134.122.0.0/17
+deny from 134.199.128.0/17
+deny from 134.209.0.0/16
+deny from 137.184.0.0/16
+deny from 138.68.0.0/16
+deny from 138.197.0.0/16
+deny from 139.59.0.0/16
+deny from 141.0.169.0/24
+deny from 141.0.170.0/24
+deny from 142.93.0.0/16
+deny from 143.110.128.0/17
+deny from 143.198.0.0/16
+deny from 143.244.128.0/17
+deny from 144.126.192.0/18
+deny from 146.185.128.0/18
+deny from 146.190.0.0/16
+deny from 147.182.128.0/17
+deny from 152.42.128.0/17
+deny from 157.230.0.0/16
+deny from 157.245.0.0/16
+deny from 159.65.0.0/16
+deny from 159.89.0.0/16
+deny from 159.203.0.0/16
+deny from 159.223.0.0/16
+deny from 161.35.0.0/16
+deny from 162.243.0.0/16
+deny from 163.47.8.0/22
+deny from 164.90.128.0/17
+deny from 164.92.64.0/18
+deny from 164.92.128.0/17
+deny from 165.22.0.0/16
+deny from 165.227.0.0/16
+deny from 165.232.32.0/19
+deny from 165.232.64.0/18
+deny from 165.232.128.0/18
+deny from 167.71.0.0/16
+deny from 167.99.0.0/16
+deny from 167.172.0.0/16
+deny from 168.144.0.0/16
+deny from 170.64.128.0/17
+deny from 174.138.0.0/17
+deny from 178.62.0.0/16
+deny from 178.128.0.0/16
+deny from 185.14.184.0/22
+deny from 188.166.0.0/16
+deny from 188.226.128.0/17
+deny from 192.34.56.0/21
+deny from 192.81.208.0/20
+deny from 192.241.128.0/17
+deny from 198.199.64.0/18
+deny from 198.211.96.0/19
+deny from 198.232.147.0/24
+deny from 204.48.16.0/20
+deny from 206.81.0.0/19
+deny from 206.189.0.0/16
+deny from 207.154.192.0/18
+deny from 208.68.36.0/22
+deny from 209.38.0.0/16
+deny from 209.97.128.0/18
+
+# Отдельные провайдеры и хостинги
+deny from 2a11:e80::/32
+deny from 2a11:af00::/29
+deny from 2a10:c340::/29
+deny from 2a09:4d40::/29
+deny from 2a09:a4c6::/32
+deny from 2a09:a4c2::/32
+deny from 2a09:407:b000::/36
+deny from 2a09:4d00::/30
+deny from 2a09:403::/32
+deny from 2a09:4e03::/32
+deny from 2a09:b685::/32
+deny from 2a07:ac80::/29
+deny from 2a05:fb42::/32
+deny from 2a0e:7044::/30
+deny from 2a0e:7040::/30
+deny from 2a0d:5ec2::/32
+deny from 2a0f:9883::/32
+deny from 2a0b:d000::/29
+deny from 2a09:3706::/31
+deny from 2a0e:e5c0::/29
+deny from 2a03:80c0::/47
+deny from 2a0d:e280::/25
+deny from 2a0e:fb43::/32
+deny from 2a0b:d000::/29
+deny from 2a0d:c580::/29
+deny from 2a10:4100::/26
+deny from 2001:41d0::/33
+deny from 2a11:f180::/31
+deny from 2a11:6b80::/25
+deny from 2a12:1240::/26
+deny from 2a0e:5900::/26
+deny from 2a0e:b140::/29
+deny from 2a07:f8c0::/26
+deny from 2a05:541:120::/48
+deny from 2a13:f080::/29
+deny from 2a12:3b46::/31
+deny from 2a13:5200::/29
+deny from 2a0d:b9c3::/32
+deny from 2a12:c300::/26
+deny from 2a12:a344::/31
+deny from 2a04:6e40::/26
+deny from 2a09:6906::/32
+
+# iHor
+deny from 2a02:f680::/48
+deny from 2a02:f680:2::/47
+deny from 2a02:f680:4::/46
+deny from 2a02:f680:8::/45
+deny from 2a02:f680:10::/44
+deny from 2a02:f680:20::/43
+deny from 2a02:f680:40::/42
+deny from 2a02:f680:80::/41
+deny from 2a02:f680:100::/40
+deny from 2a02:f680:200::/39
+deny from 2a02:f680:400::/38
+deny from 2a02:f680:800::/37
+deny from 2a02:f680:1000::/36
+deny from 2a02:f680:2000::/35
+deny from 2a02:f680:4000::/34
+deny from 2a02:f680:8000::/33
+deny from 2a02:f681::/32
+deny from 2a02:f682::/31
+deny from 2a02:f684::/30
+deny from 2a0a:9301::/47
+deny from 2a0a:9301:2::/48
+deny from 2a0a:9302::/32
+
+# Biterika Group LLC
+deny from 2a06:d647::/32
+deny from 2a07:ca07::/32
+deny from 2a0a:5680::/29
+deny from 2a0a:b387::/32
+deny from 2a0b:2d87::/32
+deny from 2a0e:8140::/29
+deny from 2a0e:cd40::/29
+deny from 2a0f:d000::/29
+
+# LLC VPSville
+deny from 2a04:c100::/29
+deny from 2a05:fb41::/32
+deny from 2a05:fb42::/32
+deny from 2a06:d642::/32
+deny from 2a06:d900::/29
+deny from 2a07:14c0::/47
+deny from 2a07:14c0:3000::/36
+deny from 2a07:14c0:5000::/36
+deny from 2a09:400:2000::/36
+deny from 2a09:400:4000::/34
+deny from 2a09:400:9000::/36
+deny from 2a09:400:a000::/35
+deny from 2a09:400:d000::/36
+deny from 2a09:400:e000::/35
+deny from 2a09:401::/32
+deny from 2a09:403::/32
+deny from 2a09:406::/32
+deny from 2a09:407::/33
+deny from 2a09:407:8000::/36
+deny from 2a09:407:a000::/35
+deny from 2a09:407:c000::/36
+deny from 2a09:407:f000::/36
+deny from 2a09:3500::/32
+deny from 2a09:3505::/36
+deny from 2a09:3505:4000::/34
+deny from 2a09:3505:8000::/35
+deny from 2a09:3505:a000::/36
+deny from 2a09:3505:c000::/34
+deny from 2a09:3506::/31
+deny from 2a09:3801::/32
+deny from 2a09:3804:3000::/36
+deny from 2a09:3804:4000::/34
+deny from 2a09:3804:8000::/33
+deny from 2a09:3806::/32
+deny from 2a09:3b00::/29
+deny from 2a09:6f00::/29
+deny from 2a09:bd82::/31
+deny from 2a09:bd84::/30
+deny from 2a09:ce00::/29
+deny from 2a09:e2c0::/26
+deny from 2a0a:4780::/30
+deny from 2a0a:4785::/32
+deny from 2a0a:4786::/31
+deny from 2a0a:c3c0::/29
+deny from 2a0a:e580::/29
+deny from 2a0b:b0c0::/29
+deny from 2a0c:2100::/32
+deny from 2a0c:2103::/32
+deny from 2a0c:4182::/32
+deny from 2a0c:5241::/32
+deny from 2a0c:5247:5000::/36
+deny from 2a0c:5247:7000::/36
+deny from 2a0c:5247:c000::/36
+deny from 2a0c:e8c0::/29
+deny from 2a0d:2e40::/29
+deny from 2a0d:5ec1::/35
+deny from 2a0d:5ec1:2000::/36
+deny from 2a0d:5ec1:5000::/36
+deny from 2a0d:5ec1:7000::/36
+deny from 2a0d:5ec1:8000::/33
+deny from 2a0d:5ec3::/32
+deny from 2a0d:5ec5::/32
+deny from 2a0d:5ec6::/32
+deny from 2a0d:60c0::/32
+deny from 2a0d:60c3::/32
+deny from 2a0f:6fc1::/32
+deny from 2a10:c0c2::/31
+deny from 2a10:c0c4::/32
+deny from 2a10:c0c6::/31
+deny from 2a10:d8c0::/29
+deny from 2a11:200::/33
+deny from 2a11:200:8000::/36
+deny from 2a11:200:a000::/36
+deny from 2a11:201::/32
+deny from 2a11:202::/31
+deny from 2a11:204::/32
+deny from 2a11:780::/34
+deny from 2a11:780:4000::/35
+deny from 2a11:780:6000::/36
+deny from 2a11:780:8000::/33
+deny from 2a11:781::/32
+deny from 2a11:783::/32
+deny from 2a11:785::/32
+deny from 2a11:786::/31
+deny from 2a11:a80::/29
+deny from 2a11:b80::/36
+deny from 2a11:b80:3000::/36
+deny from 2a11:b80:4000::/34
+deny from 2a11:b80:8000::/36
+deny from 2a11:b80:a000::/35
+deny from 2a11:b80:c000::/35
+deny from 2a11:b81::/32
+deny from 2a11:b82::/32
+deny from 2a11:b86::/31
+deny from 2a11:c80::/29
+deny from 2a11:af06:3000::/36
+deny from 2a11:af06:4000::/36
+deny from 2a12:7c00::/36
+deny from 2a12:7c00:4000::/34
+deny from 2a12:7c00:8000::/33
+deny from 2a12:7c01::/32
+deny from 2a12:7c02::/32
+deny from 2a12:7c06::/31
+
+# LLC Cloud Networks
+deny from 2a04:c100::/29
+deny from 2a05:fb40::/32
+deny from 2a05:fb43::/32
+deny from 2a05:fb45::/32
+deny from 2a05:fb47::/32
+deny from 2a06:d900::/29
+deny from 2a07:14c0:2::/47
+deny from 2a07:14c0:4::/46
+deny from 2a07:14c0:8::/45
+deny from 2a07:14c0:10::/44
+deny from 2a07:14c0:20::/43
+deny from 2a07:14c0:40::/42
+deny from 2a07:14c0:80::/41
+deny from 2a07:14c0:100::/40
+deny from 2a07:14c0:200::/39
+deny from 2a07:14c0:400::/38
+deny from 2a07:14c0:800::/37
+deny from 2a07:14c0:1000::/36
+deny from 2a07:14c0:2000::/36
+deny from 2a07:14c0:4000::/36
+deny from 2a07:14c0:6000::/36
+deny from 2a07:14c0:8000::/33
+deny from 2a07:14c1::/32
+deny from 2a07:14c2::/31
+deny from 2a07:14c4::/30
+deny from 2a09:400::/35
+deny from 2a09:400::/35
+deny from 2a09:400:3000::/36
+deny from 2a09:400:8000::/36
+deny from 2a09:402::/31
+deny from 2a09:404::/31
+deny from 2a09:406::/32
+deny from 2a09:407:1000::/36
+deny from 2a09:407:4000::/34
+deny from 2a09:407:8000::/35
+deny from 2a09:407:d000::/36
+deny from 2a09:d80::/29
+deny from 2a09:3500::/30
+deny from 2a09:3504::/32
+deny from 2a09:3506::/31
+deny from 2a09:3800::/29
+deny from 2a09:3b00::/29
+deny from 2a09:3d00::/29
+deny from 2a09:4e00::/30
+deny from 2a09:4e04::/32
+deny from 2a09:4e07::/36
+deny from 2a09:4e07:5000::/36
+deny from 2a09:4e07:6000::/35
+deny from 2a09:4e07:8000::/33
+deny from 2a09:6600::/29
+deny from 2a09:6905::/32
+deny from 2a09:6f00::/29
+deny from 2a09:a4c0::/30
+deny from 2a09:a4c4::/31
+deny from 2a09:a4c6::/32
+deny from 2a09:a4c7::/34
+deny from 2a09:a4c7:4000::/35
+deny from 2a09:a4c7:9000::/36
+deny from 2a09:a4c7:a000::/35
+deny from 2a09:a4c7:c000::/34
+deny from 2a09:b680::/29
+deny from 2a09:bd80::/29
+deny from 2a09:ce00::/29
+deny from 2a0a:b40::/29
+deny from 2a0a:2880::/29
+deny from 2a0a:3540::/29
+deny from 2a0a:4780::/30
+deny from 2a0a:4786::/31
+deny from 2a0a:c3c0::/29
+deny from 2a0a:e580::/29
+deny from 2a0a:f200::/29
+deny from 2a0b:ab00::/29
+deny from 2a0b:bd00::/29
+deny from 2a0c:2100::/29
+deny from 2a0c:5240::/32
+deny from 2a0c:5242::/32
+deny from 2a0c:5244::/31
+deny from 2a0c:5247::/35
+deny from 2a0c:5247:2000::/36
+deny from 2a0c:5247:4000::/36
+deny from 2a0c:5247:6000::/36
+deny from 2a0c:5247:8000::/36
+deny from 2a0c:5247:a000::/35
+deny from 2a0c:5247:d000::/36
+deny from 2a0c:5247:f000::/36
+deny from 2a0c:ab03::/32
+deny from 2a0c:ab07:2000::/36
+deny from 2a0c:ab07:5000::/36
+deny from 2a0c:ab07:c000::/35
+deny from 2a0c:da81::/32
+deny from 2a0c:da82::/32
+deny from 2a0c:e8c0::/29
+deny from 2a0d:2e40::/29
+deny from 2a0d:5ec0::/29
+deny from 2a0d:60c1::/32
+deny from 2a0d:60c2::/32
+deny from 2a0d:60c4::/30
+deny from 2a0d:7140::/29
+deny from 2a0d:7740::/29
+deny from 2a0d:8b00::/29
+deny from 2a0d:97c0::/29
+deny from 2a0d:abc0::/29
+deny from 2a0d:ac41::/32
+deny from 2a0d:d500::/29
+deny from 2a0d:e4c0::/29
+deny from 2a0d:f340::/29
+deny from 2a0e:ddc0::/32
+deny from 2a0f:3e00::/32
+deny from 2a0f:6f00::/29
+deny from 2a0f:9880::/29
+deny from 2a0f:c580::/29
+deny from 2a0f:cc80::/30
+deny from 2a0f:cc84::/31
+deny from 2a0f:cc86::/32
+deny from 2a0f:cc87::/33
+deny from 2a0f:cc87:9000::/36
+deny from 2a0f:cc87:a000::/35
+deny from 2a0f:cc87:c000::/34
+deny from 2a0f:cf80::/29
+deny from 2a0f:d700::/29
+deny from 2a10:2ec1::/32
+deny from 2a10:2ec2::/31
+deny from 2a10:2ec4::/32
+deny from 2a10:2ec6::/32
+deny from 2a10:2ec7:3000::/36
+deny from 2a10:2ec7:5000::/36
+deny from 2a10:2ec7:e000::/35
+deny from 2a10:c0c0::/29
+deny from 2a10:c340::/29
+deny from 2a10:d8c0::/29
+deny from 2a11:200::/29
+deny from 2a11:680::/29
+deny from 2a11:780::/29
+deny from a11:980::/29
+deny from 2a11:a80::/29
+deny from 2a11:b80::/29
+deny from a11:c80::/29
+deny from 2a11:d80::/29
+deny from 2a11:e80::/29
+deny from 2a11:af00::/29
+
+# WestHost
+deny from 2606:2e00::/33
+deny from 2607:fc98::/32
+deny from 2a0c:4180::/32
+deny from 2a0c:4182::/31
+deny from 2a0c:4184::/31
+deny from 2a0c:4186::/32
+deny from 2a0c:4187::/33
+deny from 2a0c:4187:8000::/48
+deny from 2a0c:4187:8002::/47
+deny from 2a0c:4187:8004::/46
+deny from 2a0c:4187:8008::/45
+deny from 2a0c:4187:8010::/44
+deny from 2a0c:4187:8020::/43
+deny from 2a0c:4187:8040::/42
+deny from 2a0c:4187:8080::/41
+deny from 2a0c:4187:8100::/40
+deny from 2a0c:4187:8200::/39
+deny from 2a0c:4187:8400::/38
+deny from 2a0c:4187:8800::/37
+deny from 2a0c:4187:9000::/36
+deny from 2a0c:4187:a000::/35
+deny from 2a0c:4187:c000::/34
+
+# NTX Technologies
+deny from 2a04:5200::/42
+deny from 2a04:5200:40::/43
+deny from 2a04:5200:60::/45
+deny from 2a04:5200:69::/48
+deny from 2a04:5200:6a::/47
+deny from 2a04:5200:6c::/46
+deny from 2a04:5200:70::/44
+deny from 2a04:5200:80::/41
+deny from 2a04:5200:100::/40
+deny from 2a04:5200:200::/39
+deny from 2a04:5200:400::/38
+deny from 2a04:5200:800::/37
+deny from 2a04:5200:1000::/36
+deny from 2a04:5200:2000::/35
+deny from 2a04:5200:4000::/36
+deny from 2a04:5200:5000::/37
+deny from 2a04:5200:5800::/40
+deny from 2a04:5200:5900::/42
+deny from 2a04:5200:5940::/43
+deny from 2a04:5200:5960::/44
+deny from 2a04:5200:5970::/46
+deny from 2a04:5200:5974::/47
+deny from 2a04:5200:5976::/48
+deny from 2a04:5200:5978::/45
+deny from 2a04:5200:5980::/41
+deny from 2a04:5200:5a00::/39
+deny from 2a04:5200:5c00::/38
+deny from 2a04:5200:6000::/35
+deny from 2a04:5200:8000::/33
+deny from 2a04:5202::/31
+deny from 2a04:5204::/30
+deny from 2a07:57c0::/32
+deny from 2a07:9b83::/32
+deny from 2a09:5303::/32
+deny from 2a0a:981::/32
+deny from 2a0e:d602::/32
+deny from 2a0f:4680::/32
+
+# Fox Lab
+deny from 2a0c:6901::/32
+deny from 2a0c:6902::/31
+deny from 2a0c:6904::/30
+
+# LLC Internet Tehnologii
+deny from 2a05:544::/31
+deny from 2a05:547::/32
+deny from 2a06:c002::/32
+deny from 2a06:c004::/32
+deny from 2a06:c006::/31
+deny from 2a09:9443::/32
+deny from 2a0a:b386::/32
+deny from 2a0b:1580::/29
+deny from 2a0e:eec0::/32
+deny from 2a0e:fb40::/32
+deny from 2a0f:380::/29
+
+# Censys Scanner
+# https://about.censys.io/
+deny from 162.142.125.0/24
+deny from 167.94.138.0/24
+deny from 167.94.145.0/24
+deny from 167.94.146.0/24
+deny from 167.248.133.0/24
+deny from 2602:80d:1000:b0cc:e::/80
+deny from 2620:96:e000:b0cc:e::/80
+
+# IsphereLLC
+deny from 2a10:4100::/26
+
+# Sysoev Aleksey Anatolevich
+deny from 2a09:e580::/25
+deny from 2a11:91c0::/26
+
+# JSC MediaSoft Ekspert
+deny from 2a00:f440::/45
+deny from 2a00:f440:8::/47
+deny from 2a00:f440:b::/48
+deny from 2a00:f440:c::/46
+deny from 2a00:f440:10::/44
+deny from 2a00:f440:20::/43
+deny from 2a00:f440:40::/42
+deny from 2a00:f440:80::/41
+deny from 2a00:f440:100::/40
+deny from 2a00:f440:200::/39
+deny from 2a00:f440:400::/38
+deny from 2a00:f440:800::/37
+deny from 2a00:f440:1000::/36
+deny from 2a00:f440:2000::/35
+deny from 2a00:f440:4000::/34
+deny from 2a00:f440:8000::/33
+
+# Racktech Co. Ltd.
+deny from 2a05:53c0::/29
+deny from 2a05:fb40::/32
+deny from 2a05:fb43::/32
+deny from 2a05:fb44::/30
+deny from 2a07:14c0:2::/47
+deny from 2a07:14c0:4::/46
+deny from 2a07:14c0:8::/45
+deny from 2a07:14c0:10::/44
+deny from 2a07:14c0:20::/43
+deny from 2a07:14c0:40::/42
+deny from 2a07:14c0:80::/41
+deny from 2a07:14c0:100::/40
+deny from 2a07:14c0:200::/39
+deny from 2a07:14c0:400::/38
+deny from 2a07:14c0:800::/37
+deny from 2a07:14c0:1000::/36
+deny from 2a07:14c0:2000::/36
+deny from 2a07:14c0:4000::/36
+deny from 2a07:14c0:6000::/35
+deny from 2a07:14c0:8000::/33
+deny from 2a07:14c1::/32
+deny from 2a07:14c2::/31
+deny from 2a07:14c4::/30
+deny from 2a09:400::/35
+deny from 2a09:400:3000::/36
+deny from 2a09:400:8000::/36
+deny from 2a09:400:c000::/36
+deny from 2a09:402::/32
+deny from 2a09:404::/31
+deny from 2a09:407:9000::/36
+deny from 2a09:407:d000::/36
+deny from 2a09:407:e000::/36
+deny from 2a09:d80::/29
+deny from 2a09:3501::/32
+deny from 2a09:3502::/31
+deny from 2a09:3504::/32
+deny from 2a09:3505:1000::/36
+deny from 2a09:3505:2000::/35
+deny from 2a09:3505:b000::/36
+deny from 2a09:3701::/32
+deny from 2a09:3800::/32
+deny from 2a09:3802::/31
+deny from 2a09:3804::/35
+deny from 2a09:3804:2000::/36
+deny from 2a09:3805::/32
+deny from 2a09:3807::/32
+deny from 2a09:3d00::/29
+deny from 2a09:4e00::/29
+deny from 2a09:6905::/32
+deny from 2a09:7e00::/29
+deny from 2a09:a4c0::/29
+deny from 2a09:b680::/29
+deny from 2a09:bd80::/31
+deny from 2a0a:b40::/29
+deny from 2a0a:3540::/29
+deny from 2a0a:f200::/29
+deny from 2a0b:bd00::/29
+deny from 2a0c:2101::/32
+deny from 2a0c:2102::/32
+deny from 2a0c:2104::/30
+deny from 2a0c:5240::/32
+deny from 2a0c:5242::/31
+deny from 2a0c:5244::/31
+deny from 2a0c:5246::/32
+deny from 2a0c:5247::/34
+deny from 2a0c:5247:4000::/36
+deny from 2a0c:5247:6000::/36
+deny from 2a0c:5247:8000::/34
+deny from 2a0c:5247:d000::/36
+deny from 2a0c:5247:e000::/35
+deny from 2a0c:ab07:5000::/36
+deny from 2a0d:3047::/32
+deny from 2a0d:5ec0::/32
+deny from 2a0d:5ec1:3000::/36
+deny from 2a0d:5ec1:4000::/36
+deny from 2a0d:5ec1:6000::/36
+deny from 2a0d:5ec2::/32
+deny from 2a0d:5ec4::/32
+deny from 2a0d:5ec7::/32
+deny from 2a0d:60c1::/32
+deny from 2a0d:60c2::/32
+deny from 2a0d:60c4::/30
+deny from 2a0d:7740::/29
+deny from 2a0d:8b00::/29
+deny from 2a0d:abc0::/29
+deny from 2a0d:d500::/29
+deny from 2a0d:e4c0::/29
+deny from 2a0d:f340::/29
+deny from 2a0e:fb43::/32
+deny from 2a0f:9880::/29
+deny from 2a0f:c580::/29
+deny from 2a0f:cc80::/29
+deny from 2a0f:cf80::/29
+deny from 2a10:2ec3::/32
+deny from 2a10:2ec7:5000::/36
+deny from 2a10:c0c0::/31
+deny from 2a10:c0c5::/32
+deny from 2a10:c340::/29
+deny from 2a11:200:9000::/36
+deny from 2a11:200:b000::/36
+deny from 2a11:200:c000::/34
+deny from 2a11:205::/32
+deny from 2a11:206::/31
+deny from 2a11:680::/29
+deny from 2a11:780:7000::/36
+deny from 2a11:782::/32
+deny from 2a11:784::/32
+deny from 2a11:980::/29
+deny from 2a11:b80:1000::/36
+deny from 2a11:b80:2000::/36
+deny from 2a11:b80:9000::/36
+deny from 2a11:b80:e000::/35
+deny from 2a11:b83::/32
+deny from 2a11:b84::/31
+deny from 2a11:d80::/29
+deny from 2a11:e80::/29
+deny from 2a11:5a43::/32
+deny from 2a11:68c4::/32
+deny from 2a11:af00::/30
+deny from 2a11:af04::/31
+deny from 2a11:af06::/35
+deny from 2a11:af06:2000::/36
+deny from 2a11:af06:5000::/36
+deny from 2a11:af06:6000::/35
+deny from 2a11:af06:8000::/33
+deny from 2a11:af07::/32
+deny from 2a12:7c00:1000::/36
+deny from 2a12:7c00:2000::/35
+deny from 2a12:7c03::/32
+deny from 2a12:7c04::/31
+
+# SIA Veesp
+deny from 2a00:1838::/32
+deny from 2a0a:4784::/32
+deny from 2a0c:16c0::/29
+
+# Mikhail Tonkonog / Kontel LLC
+deny from 2a06:c680::/29
+deny from 2a06:d644::/32
+deny from 2a0d:afc7::/32
+deny from 2a0d:c102::/32
+deny from 2a0d:c580::/29
+deny from 2a12:a340::/32
+deny from 2a13:3c80::/29
+deny from 2a12:a342::/33
+deny from 2a12:a347:1::/48
+deny from 2a09:3707:8000::/33
+deny from 2a13:3c80::/29
+deny from 2a13:8580::/26
+
+# Mikhail Tonkonog / JSC Selectel
+deny from 2a00:ab00::/34
+deny from 2a00:ab00:4000::/35
+deny from 2a00:ab00:7000::/36
+deny from 2a00:ab00:8000::/33
+deny from 2a00:ab01::/32
+deny from 2a00:ab02::/31
+deny from 2a00:ab04::/30
+deny from 2a04:a5c0::/29
+deny from 2a0b:e9c0::/29
+deny from 2a0c:f640::/31
+deny from 2a0e:d00::/29
+deny from 2a0e:b140::/29
+deny from 2a0f:cdc6:2010::/44
+deny from 2a0f:db80::/29
+deny from 2a10:4700::/29
+deny from 2a11:4b41::/32
+deny from 2a11:4b42::/32
+deny from 2a12:4300::/29
+deny from 85.142.40.0/21
+
+# Network Management Ltd
+deny from 2a03:e2c0::/32
+deny from 2a0d:8340::/32
+
+# Tentorium LLC
+deny from 2a09:6280::/47
+deny from 2a09:6280:4::/46
+deny from 2a09:6280:8::/45
+deny from 2a09:6280:10::/44
+deny from 2a09:6280:20::/43
+deny from 2a09:6280:40::/42
+deny from 2a09:6280:80::/41
+deny from 2a09:6280:100::/40
+deny from 2a09:6280:200::/39
+deny from 2a09:6280:400::/38
+deny from 2a09:6280:800::/37
+deny from 2a09:6280:1000::/36
+deny from 2a09:6280:2000::/35
+deny from 2a09:6280:4000::/34
+deny from 2a09:6280:8000::/33
+deny from 2a09:6281::/32
+deny from 2a09:6282::/31
+deny from 2a09:6284::/30
+
+# Hosting Solution Ltd.
+deny from 2606:5e00::/32
+deny from 2a07:4dc0::/29
+deny from 2a07:b400::/29
+deny from 2a0b:2000::/29
+deny from 2a0d:6800::/29
+
+# IP Market - FZCO
+deny from 2a03:f7c0::/29
+deny from 2a06:ddc0::/29
+deny from 2a0b:8040::/29
+deny from 2a0b:d900::/29
+deny from 2a0b:e9c0::/29
+deny from 2a0c:5c0::/29
+deny from 2a0c:5d00::/29
+deny from 2a0c:65c0::/29
+deny from 2a0c:6980::/29
+deny from 2a0c:f644::/30
+deny from 2a13:97c0::/29
