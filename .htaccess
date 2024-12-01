@@ -858,6 +858,7 @@ deny from 2a12:a347:1::/48
 deny from 2a09:3707:8000::/33
 deny from 2a13:3c80::/29
 deny from 2a13:8580::/26
+deny from 2a13:4fc0::/26
 
 # Mikhail Tonkonog / JSC Selectel
 deny from 2a00:ab00::/34
