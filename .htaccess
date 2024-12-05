@@ -95,6 +95,7 @@ deny from 20.33.0.0/16
 deny from 20.34.0.0/15
 deny from 20.128.0.0/16
 deny from 20.64.0.0/10
+deny from 23.27.110.0/24
 deny from 23.96.0.0/13
 deny from 23.105.224.0/19
 deny from 34.32.0.0/11
@@ -112,6 +113,7 @@ deny from 40.112.0.0/13
 deny from 40.120.0.0/14
 deny from 40.124.0.0/16
 deny from 40.125.0.0/17
+deny from 43.153.0.0/16
 deny from 45.11.144.0/20
 deny from 45.11.160.0/19
 deny from 45.11.192.0/18
