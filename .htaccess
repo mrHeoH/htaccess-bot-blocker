@@ -77,6 +77,7 @@ Allow from All
 
 # Сканеры сайта
 deny from 3.128.0.0/9
+deny from 3.8.0.0/13
 deny from 3.16.0.0/13
 deny from 4.160.0.0/11
 deny from 4.192.0.0/10
@@ -123,6 +124,7 @@ deny from 45.11.160.0/19
 deny from 45.11.192.0/18
 deny from 45.12.0.0/14
 deny from 45.80.0.0/13
+deny from 45.84.104.0/22
 deny from 45.88.0.0/17
 deny from 45.88.128.0/18
 deny from 45.88.192.0/20
@@ -130,6 +132,7 @@ deny from 45.88.208.0/21
 deny from 45.136.56.0/22
 deny from 45.145.116.0/22
 deny from 45.152.116.0/23
+deny from 45.227.254.0/24
 deny from 47.254.0.0/16
 deny from 52.145.0.0/16
 deny from 52.146.0.0/15
@@ -151,6 +154,7 @@ deny from 103.77.214.0/23
 deny from 123.186.0.0/17
 deny from 134.209.0.0/16
 deny from 137.184.0.0/16
+deny from 138.97.216.0/22
 deny from 143.198.0.0/16
 deny from 146.70.0.0/16
 deny from 146.190.0.0/16
