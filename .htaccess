@@ -88,6 +88,7 @@ deny from 13.104.0.0/14
 deny from 13.208.0.0/12
 deny from 13.224.0.0/12
 deny from 13.200.0.0/13
+deny from 15.188.0.0/16
 deny from 20.192.0.0/10
 deny from 20.160.0.0/12
 deny from 20.193.131.12
@@ -333,6 +334,7 @@ deny from 2001:470:2000::/35
 deny from 2a14:2dc0::/29
 deny from 2a14:7b80::/29
 deny from 2a01:4f8::/30
+deny from 2a12:5940:1000::/36
 
 # iHor
 deny from 2a02:f680::/48
@@ -868,6 +870,11 @@ deny from 2a00:1838::/32
 deny from 2a0a:4784::/32
 deny from 2a0c:16c0::/29
 
+# Mikhail Ivanov / AS214958
+deny from 2a11:91c0::/29
+deny from 2a05:541:1a1::/48
+deny from 2a13:3c80::/29
+
 # Mikhail Tonkonog / Kontel LLC
 deny from 2a06:c680::/29
 deny from 2a06:d644::/32
@@ -875,14 +882,16 @@ deny from 2a0d:afc7::/32
 deny from 2a0d:c102::/32
 deny from 2a0d:c580::/29
 deny from 2a12:a340::/32
-deny from 2a13:3c80::/29
 deny from 2a12:a342::/33
 deny from 2a12:a347:1::/48
 deny from 2a09:3707:8000::/33
-deny from 2a13:3c80::/29
 deny from 2a13:8580::/26
 deny from 2a13:4fc0::/26
 deny from 2a13:ac80::/26
+deny from 2a09:e2c0::/29
+deny from 2a0b:6cc0::/29
+deny from 2a0c:9300::/29
+deny from 2a10:4106::/31
 
 # Mikhail Tonkonog / JSC Selectel
 deny from 2a00:ab00::/34
@@ -904,6 +913,28 @@ deny from 2a11:4b41::/32
 deny from 2a11:4b42::/32
 deny from 2a12:4300::/29
 deny from 85.142.40.0/21
+
+# Mikhail Tonkonog / Start LLC
+deny from 2a03:220:8000::/34
+deny from 2a03:220:c000::/35
+deny from 2a03:220:e000::/36
+deny from 2a03:220:f000::/48
+deny from 2a03:220:f002::/47
+deny from 2a03:220:f004::/46
+deny from 2a03:220:f008::/45
+deny from 2a03:220:f010::/44
+deny from 2a03:220:f020::/43
+deny from 2a03:220:f040::/42
+deny from 2a03:220:f080::/41
+deny from 2a03:220:f100::/40
+deny from 2a03:220:f200::/39
+deny from 2a03:220:f400::/38
+deny from 2a03:220:f800::/37
+deny from 2a03:5a00:7::/48
+deny from 2a05:b7c0::/48
+deny from 2a09:6281::/32
+deny from 2a11:c84::/32
+deny from 2a12:c300::/30
 
 # Network Management Ltd
 deny from 2a03:e2c0::/32
