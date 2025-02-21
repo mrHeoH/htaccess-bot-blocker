@@ -68,6 +68,7 @@ RewriteCond %{HTTP_USER_AGENT} ^(.*)KStandBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)AwarioBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)StatOnlineRuBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)CyberOKInspect(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Embarcadero(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)leakix\.net(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)ads\.txt(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)MegaIndex\.ru(.*)$ [NC]
@@ -148,6 +149,7 @@ deny from 74.226.128.0/19
 deny from 79.137.194.0/23
 deny from 80.85.244.0/22
 deny from 84.239.16.0/23
+deny from 84.247.144.0/20
 deny from 89.117.72.0/21
 deny from 89.187.160.0/19
 deny from 91.92.240.0/20
@@ -162,6 +164,7 @@ deny from 138.97.216.0/22
 deny from 143.198.0.0/16
 deny from 146.70.0.0/16
 deny from 146.190.0.0/16
+deny from 150.136.0.0/16
 deny from 154.26.128.0/20
 deny from 155.4.0.0/16
 deny from 157.90.0.0/16
@@ -337,6 +340,14 @@ deny from 2a14:2dc0::/29
 deny from 2a14:7b80::/29
 deny from 2a01:4f8::/30
 deny from 2a12:5940:1000::/36
+deny from 2a11:2080::/26
+deny from 2a11:8440::/26
+deny from 2a11:68c0::/31
+deny from 2a0f:c084::/31
+deny from 2a10:cbc0::/29
+deny from 2a11:e380::/29
+deny from 2a12:70c0::/29
+deny from 2a13:7e00::/29
 
 # iHor
 deny from 2a02:f680::/48
@@ -701,7 +712,9 @@ deny from 2a0e:fb40::/32
 deny from 2a0f:380::/29
 
 # Hetzner
+deny from 65.21.0.0/16
 deny from 65.108.0.0/15
+deny from 95.216.0.0/15
 
 # Amazon
 deny from 54.160.0.0/13
