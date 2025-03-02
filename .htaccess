@@ -146,6 +146,7 @@ deny from 52.152.0.0/13
 deny from 52.160.0.0/11
 deny from 74.234.0.0/15
 deny from 74.226.128.0/19
+deny from 77.238.224.0/19
 deny from 79.137.194.0/23
 deny from 80.85.244.0/22
 deny from 84.239.16.0/23
@@ -189,6 +190,7 @@ deny from 193.176.211.0/24
 deny from 194.38.20.0/24
 deny from 195.178.110.0/24
 deny from 195.181.160.0/20
+deny from 196.251.80.0/21
 deny from 196.251.114.0/23
 deny from 199.168.96.0/21
 deny from 204.12.192.0/18
@@ -348,6 +350,12 @@ deny from 2a10:cbc0::/29
 deny from 2a11:e380::/29
 deny from 2a12:70c0::/29
 deny from 2a13:7e00::/29
+deny from 2a11:2080::/26
+deny from 2001:1600::/29
+deny from 2a11:cd04::/32
+
+# Yandex.Cloud
+deny from 178.154.192.0/18
 
 # iHor
 deny from 2a02:f680::/48
@@ -960,6 +968,7 @@ deny from 2a05:b7c0::/48
 deny from 2a09:6281::/32
 deny from 2a11:c84::/32
 deny from 2a12:c300::/30
+deny from 2a13:3b80::/25
 
 # Network Management Ltd
 deny from 2a03:e2c0::/32
