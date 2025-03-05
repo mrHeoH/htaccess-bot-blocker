@@ -86,7 +86,7 @@ RewriteRule .* - [F]
 Order Allow,Deny
 Allow from All
 
-# Сканеры сайта
+# IPv4: отдельные провайдеры
 deny from 3.128.0.0/9
 deny from 3.8.0.0/13
 deny from 3.16.0.0/13
@@ -210,6 +210,76 @@ deny from 217.160.144.0/22
 deny from 217.160.148.0/23
 deny from 221.8.0.0/14
 
+# IPv6: Отдельные провайдеры и хостинги
+deny from 2a11:e80::/32
+deny from 2a11:af00::/29
+deny from 2a10:c340::/29
+deny from 2a09:4d40::/29
+deny from 2a09:a4c6::/32
+deny from 2a09:a4c2::/32
+deny from 2a09:407:b000::/36
+deny from 2a09:4d00::/30
+deny from 2a09:403::/32
+deny from 2a09:4e03::/32
+deny from 2a09:b685::/32
+deny from 2a07:ac80::/29
+deny from 2a05:fb42::/32
+deny from 2a0e:7044::/30
+deny from 2a0e:7040::/30
+deny from 2a0d:5ec2::/32
+deny from 2a0f:9883::/32
+deny from 2a0b:d000::/29
+deny from 2a09:3706::/31
+deny from 2a0e:e5c0::/29
+deny from 2a03:80c0::/47
+deny from 2a0d:e280::/25
+deny from 2a0e:fb43::/32
+deny from 2a0b:d000::/29
+deny from 2a0d:c580::/29
+deny from 2a10:4100::/26
+deny from 2001:41d0::/33
+deny from 2a11:f180::/31
+deny from 2a11:6b80::/25
+deny from 2a12:1240::/26
+deny from 2a0e:5900::/26
+deny from 2a0e:b140::/29
+deny from 2a07:f8c0::/26
+deny from 2a05:541:120::/48
+deny from 2a13:f080::/29
+deny from 2a12:3b46::/31
+deny from 2a13:5200::/29
+deny from 2a0d:b9c3::/32
+deny from 2a12:c300::/26
+deny from 2a12:a344::/31
+deny from 2a04:6e40::/26
+deny from 2a09:6906::/32
+deny from 2001:470:2000::/35
+deny from 2a14:2dc0::/29
+deny from 2a14:7b80::/29
+deny from 2a01:4f8::/30
+deny from 2a12:5940:1000::/36
+deny from 2a11:2080::/26
+deny from 2a11:8440::/26
+deny from 2a11:68c0::/31
+deny from 2a0f:c084::/31
+deny from 2a10:cbc0::/29
+deny from 2a11:e380::/29
+deny from 2a12:70c0::/29
+deny from 2a13:7e00::/29
+deny from 2a11:2080::/26
+deny from 2001:1600::/29
+deny from 2a11:cd04::/32
+deny from 2a11:8300::/26
+deny from 2a05:f480:2000::/36
+deny from 2a0a:9302:1::/48
+deny from 2a0a:4cc0::/35
+
+# Google LLC Proxy
+deny from 2001:4860::/36
+
+# Yandex.Cloud
+deny from 178.154.192.0/18
+
 # DigitalOcean
 deny from 5.101.96.0/20
 deny from 24.144.64.0/18
@@ -303,76 +373,6 @@ deny from 207.154.192.0/18
 deny from 208.68.36.0/22
 deny from 209.38.0.0/16
 deny from 209.97.128.0/18
-
-# Отдельные провайдеры и хостинги
-deny from 2a11:e80::/32
-deny from 2a11:af00::/29
-deny from 2a10:c340::/29
-deny from 2a09:4d40::/29
-deny from 2a09:a4c6::/32
-deny from 2a09:a4c2::/32
-deny from 2a09:407:b000::/36
-deny from 2a09:4d00::/30
-deny from 2a09:403::/32
-deny from 2a09:4e03::/32
-deny from 2a09:b685::/32
-deny from 2a07:ac80::/29
-deny from 2a05:fb42::/32
-deny from 2a0e:7044::/30
-deny from 2a0e:7040::/30
-deny from 2a0d:5ec2::/32
-deny from 2a0f:9883::/32
-deny from 2a0b:d000::/29
-deny from 2a09:3706::/31
-deny from 2a0e:e5c0::/29
-deny from 2a03:80c0::/47
-deny from 2a0d:e280::/25
-deny from 2a0e:fb43::/32
-deny from 2a0b:d000::/29
-deny from 2a0d:c580::/29
-deny from 2a10:4100::/26
-deny from 2001:41d0::/33
-deny from 2a11:f180::/31
-deny from 2a11:6b80::/25
-deny from 2a12:1240::/26
-deny from 2a0e:5900::/26
-deny from 2a0e:b140::/29
-deny from 2a07:f8c0::/26
-deny from 2a05:541:120::/48
-deny from 2a13:f080::/29
-deny from 2a12:3b46::/31
-deny from 2a13:5200::/29
-deny from 2a0d:b9c3::/32
-deny from 2a12:c300::/26
-deny from 2a12:a344::/31
-deny from 2a04:6e40::/26
-deny from 2a09:6906::/32
-deny from 2001:470:2000::/35
-deny from 2a14:2dc0::/29
-deny from 2a14:7b80::/29
-deny from 2a01:4f8::/30
-deny from 2a12:5940:1000::/36
-deny from 2a11:2080::/26
-deny from 2a11:8440::/26
-deny from 2a11:68c0::/31
-deny from 2a0f:c084::/31
-deny from 2a10:cbc0::/29
-deny from 2a11:e380::/29
-deny from 2a12:70c0::/29
-deny from 2a13:7e00::/29
-deny from 2a11:2080::/26
-deny from 2001:1600::/29
-deny from 2a11:cd04::/32
-deny from 2a11:8300::/26
-deny from 2a05:f480:2000::/36
-deny from 2a0a:9302:1::/48
-deny from 2a0a:4cc0::/35
-
-# Google LLC Proxy
-deny from 2001:4860::/36
-
-# Yandex.Cloud
-deny from 178.154.192.0/18
 
 # iHor
 deny from 2a02:f680::/48
