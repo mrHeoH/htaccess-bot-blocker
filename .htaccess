@@ -1,3 +1,5 @@
+RewriteEngine on
+
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
 RewriteCond %{HTTP_USER_AGENT} ^(.*)zgrab(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)python-requests(.*)$ [NC,OR]
@@ -74,6 +76,13 @@ RewriteCond %{HTTP_USER_AGENT} ^(.*)ads\.txt(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)MegaIndex\.ru(.*)$ [NC]
 RewriteRule ^.*$ - [R=403,L]
 
+# Блокировка тех, кто использует базы накрутчиков
+RewriteCond %{HTTP_REFERER} anonymousfox\.co [NC,OR]
+RewriteCond %{HTTP_REFERER} anonymousfox\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} api\.pfbaza\.website [NC,OR]
+RewriteCond %{HTTP_REFERER} pfbaza\.website [NC,OR]
+RewriteRule .* - [F]
+
 Order Allow,Deny
 Allow from All
 
@@ -147,6 +156,7 @@ deny from 52.160.0.0/11
 deny from 74.234.0.0/15
 deny from 74.226.128.0/19
 deny from 77.238.224.0/19
+deny from 77.238.231.0/24
 deny from 79.137.194.0/23
 deny from 80.85.244.0/22
 deny from 84.239.16.0/23
@@ -353,6 +363,13 @@ deny from 2a13:7e00::/29
 deny from 2a11:2080::/26
 deny from 2001:1600::/29
 deny from 2a11:cd04::/32
+deny from 2a11:8300::/26
+deny from 2a05:f480:2000::/36
+deny from 2a0a:9302:1::/48
+deny from 2a0a:4cc0::/35
+
+# Google LLC Proxy
+deny from 2001:4860::/36
 
 # Yandex.Cloud
 deny from 178.154.192.0/18
