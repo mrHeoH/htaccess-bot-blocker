@@ -71,16 +71,18 @@ RewriteCond %{HTTP_USER_AGENT} ^(.*)AwarioBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)StatOnlineRuBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)CyberOKInspect(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)Embarcadero(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)PerplexityBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)leakix\.net(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)ads\.txt(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)MegaIndex\.ru(.*)$ [NC]
 RewriteRule ^.*$ - [R=403,L]
 
 # Блокировка тех, кто использует базы накрутчиков
+RewriteCond %{HTTP_REFERER} pythonforautomation\.com [NC,OR]
 RewriteCond %{HTTP_REFERER} anonymousfox\.co [NC,OR]
 RewriteCond %{HTTP_REFERER} anonymousfox\.com [NC,OR]
 RewriteCond %{HTTP_REFERER} api\.pfbaza\.website [NC,OR]
-RewriteCond %{HTTP_REFERER} pfbaza\.website [NC,OR]
+RewriteCond %{HTTP_REFERER} pfbaza\.website [NC]
 RewriteRule .* - [F]
 
 Order Allow,Deny
@@ -198,6 +200,7 @@ deny from 192.42.116.0/22
 deny from 193.32.126.0/23
 deny from 193.176.211.0/24
 deny from 194.38.20.0/24
+deny from 195.82.146.0/23
 deny from 195.178.110.0/24
 deny from 195.181.160.0/20
 deny from 196.251.80.0/21
@@ -262,10 +265,6 @@ deny from 2a11:2080::/26
 deny from 2a11:8440::/26
 deny from 2a11:68c0::/31
 deny from 2a0f:c084::/31
-deny from 2a10:cbc0::/29
-deny from 2a11:e380::/29
-deny from 2a12:70c0::/29
-deny from 2a13:7e00::/29
 deny from 2a11:2080::/26
 deny from 2001:1600::/29
 deny from 2a11:cd04::/32
@@ -273,6 +272,7 @@ deny from 2a11:8300::/26
 deny from 2a05:f480:2000::/36
 deny from 2a0a:9302:1::/48
 deny from 2a0a:4cc0::/35
+deny from 2a0f:9e00::/29
 
 # Google LLC Proxy
 deny from 2001:4860::/36
@@ -986,6 +986,25 @@ deny from 2a09:6281::/32
 deny from 2a11:c84::/32
 deny from 2a12:c300::/30
 deny from 2a13:3b80::/25
+
+# Mikhail Tonkonog / JSC IOT
+deny from 2a01:230::/32
+deny from 2a06:dc40::/29
+deny from 2a09:f900::/48
+deny from 2a0e:5386::/32
+deny from 2a0e:dfc7:d8f3::/48
+deny from 2a0e:fb47::/32
+deny from 2a0f:3103::/32
+deny from 2a0f:8443::/32
+deny from 2a12:1e80::/29
+deny from 2a12:a341::/32
+deny from 2a12:a347::/32
+
+# Galchenko Anna Viktorovna
+deny from 2a10:cbc0::/29
+deny from 2a11:e380::/29
+deny from 2a12:70c0::/29
+deny from 2a13:7e00::/29
 
 # Network Management Ltd
 deny from 2a03:e2c0::/32
