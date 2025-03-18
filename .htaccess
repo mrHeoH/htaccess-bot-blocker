@@ -72,6 +72,7 @@ RewriteCond %{HTTP_USER_AGENT} ^(.*)StatOnlineRuBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)CyberOKInspect(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)Embarcadero(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)PerplexityBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Timpibot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)leakix\.net(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)ads\.txt(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)MegaIndex\.ru(.*)$ [NC]
@@ -161,6 +162,7 @@ deny from 77.238.224.0/19
 deny from 77.238.231.0/24
 deny from 79.137.194.0/23
 deny from 80.85.244.0/22
+deny from 84.17.56.0/21
 deny from 84.239.16.0/23
 deny from 84.247.144.0/20
 deny from 89.117.72.0/21
@@ -170,6 +172,7 @@ deny from 102.129.252.0/24
 deny from 103.15.235.0/24
 deny from 103.54.56.0/22
 deny from 103.77.214.0/23
+deny from 103.82.240.0/22
 deny from 123.186.0.0/17
 deny from 134.209.0.0/16
 deny from 137.184.0.0/16
@@ -273,6 +276,7 @@ deny from 2a05:f480:2000::/36
 deny from 2a0a:9302:1::/48
 deny from 2a0a:4cc0::/35
 deny from 2a0f:9e00::/29
+deny from 2a05:3580::/29
 
 # Google LLC Proxy
 deny from 2001:4860::/36
@@ -363,6 +367,7 @@ deny from 188.226.128.0/17
 deny from 192.34.56.0/21
 deny from 192.81.208.0/20
 deny from 192.241.128.0/17
+deny from 193.70.0.0/17
 deny from 198.199.64.0/18
 deny from 198.211.96.0/19
 deny from 198.232.147.0/24
