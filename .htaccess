@@ -184,6 +184,7 @@ deny from 146.70.0.0/16
 deny from 146.190.0.0/16
 deny from 150.136.0.0/16
 deny from 154.26.128.0/20
+deny from 154.83.64.0/18
 deny from 155.4.0.0/16
 deny from 157.90.0.0/16
 deny from 168.138.0.0/16
@@ -282,6 +283,7 @@ deny from 2a0f:9e00::/29
 deny from 2a05:3580::/29
 deny from 2a0f:2840::/26
 deny from 2a10:7f00::/26
+deny from 2a12:d5c0::/29
 
 # Google LLC Proxy
 deny from 2001:4860::/36
