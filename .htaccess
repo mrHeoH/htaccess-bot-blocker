@@ -91,9 +91,10 @@ Order Allow,Deny
 Allow from All
 
 # IPv4: отдельные провайдеры
-deny from 3.128.0.0/9
 deny from 3.8.0.0/13
 deny from 3.16.0.0/13
+deny from 3.104.0.0/13
+deny from 3.128.0.0/9
 deny from 4.160.0.0/11
 deny from 4.192.0.0/10
 deny from 13.64.0.0/11
@@ -102,6 +103,7 @@ deny from 13.104.0.0/14
 deny from 13.208.0.0/12
 deny from 13.224.0.0/12
 deny from 13.200.0.0/13
+deny from 13.232.0.0/13
 deny from 15.188.0.0/16
 deny from 20.192.0.0/10
 deny from 20.160.0.0/12
@@ -152,6 +154,7 @@ deny from 45.152.116.0/23
 deny from 45.227.254.0/24
 deny from 47.254.0.0/16
 deny from 49.12.0.0/15
+deny from 52.136.0.0/13
 deny from 52.145.0.0/16
 deny from 52.146.0.0/15
 deny from 52.148.0.0/14
@@ -191,6 +194,7 @@ deny from 168.138.0.0/16
 deny from 162.55.0.0/16
 deny from 170.106.0.0/16
 deny from 172.128.0.0/10
+deny from 172.200.0.0/13
 deny from 178.128.96.0/20
 deny from 178.128.240.0/20
 deny from 185.5.251.0/24
@@ -285,8 +289,13 @@ deny from 2a0f:9e00::/29
 deny from 2a05:3580::/29
 deny from 2a0f:2840::/26
 deny from 2a10:7f00::/26
+deny from 2a10:34c0::/26
+deny from 2a11:5c80::/25
 deny from 2a12:d5c0::/29
 deny from 2a12:2d40::/29
+deny from 2607:a400::/32
+deny from 2a0e:13c0::/29
+deny from 2a11:1c40::/26
 
 # Google LLC Proxy
 deny from 2001:4860::/36
@@ -324,6 +333,7 @@ deny from 103.253.144.0/22
 deny from 104.131.0.0/16
 deny from 104.236.0.0/16
 deny from 104.248.0.0/16
+deny from 107.151.208.0/20
 deny from 107.170.0.0/16
 deny from 107.189.28.0/22
 deny from 122.136.0.0/13
