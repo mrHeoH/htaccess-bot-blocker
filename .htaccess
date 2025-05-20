@@ -303,6 +303,7 @@ deny from 2a11:3c40::/31
 deny from 2a11:66c1::/32
 deny from 2a12:c180::/26
 deny from 2a01:5560::/32
+deny from 2a10:6500::/26
 
 # Google LLC Proxy
 deny from 2001:4860::/36
@@ -1032,6 +1033,33 @@ deny from 2a0f:8443::/32
 deny from 2a12:1e80::/29
 deny from 2a12:a341::/32
 deny from 2a12:a347::/32
+
+# Mikhail Tonkonog / Alex Group LLC
+deny from 2a02:eb00:2::/48
+deny from 2a0b:4140::/36
+deny from 2a0b:4140:9000::/36
+deny from 2a0b:4140:a000::/35
+deny from 2a0b:4140:c000::/34
+deny from 2a0b:4142::/31
+deny from 2a0b:4144::/30
+deny from 2a10:9680::/32
+deny from 2a10:9682::/31
+deny from 2a10:9684::/31
+deny from 2a10:9686::/32
+deny from 2a11:e140::/29
+deny from 2a12:6c40::/29
+deny from 2a12:7f40::/29
+deny from 2a12:92c0::/29
+deny from 2a13:3880::/29
+deny from 2a13:5980::/29
+deny from 2a13:8c40::/29
+deny from 2a13:9340::/29
+deny from 2a13:93c0::/29
+deny from 2a13:97c0::/29
+deny from 2a14:3bc0::/29
+deny from 2a14:5240::/29
+deny from 2a14:5640::/29
+
 
 # Galchenko Anna Viktorovna
 deny from 2a10:cbc0::/29
