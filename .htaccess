@@ -75,6 +75,7 @@ RewriteCond %{HTTP_USER_AGENT} ^(.*)PerplexityBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)Timpibot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)CCleaner(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)Barkrowler(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)Amazonbot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)leakix\.net(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)ads\.txt(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)MegaIndex\.ru(.*)$ [NC]
@@ -208,6 +209,7 @@ deny from 185.153.196.0/22
 deny from 185.153.151.0/24
 deny from 185.156.46.0/24
 deny from 185.164.121.0/24
+deny from 185.196.0.0/24
 deny from 188.130.188.0/23
 deny from 192.42.116.0/22
 deny from 193.32.126.0/23
@@ -219,6 +221,7 @@ deny from 195.178.110.0/24
 deny from 195.181.160.0/20
 deny from 196.251.80.0/21
 deny from 196.251.114.0/23
+deny from 198.44.188.0/22
 deny from 199.168.96.0/21
 deny from 204.12.192.0/18
 deny from 205.210.31.0/24
@@ -292,7 +295,6 @@ deny from 2a0f:9e00::/29
 deny from 2a05:3580::/29
 deny from 2a0f:2840::/26
 deny from 2a10:7f00::/26
-deny from 2a10:34c0::/26
 deny from 2a11:5c80::/25
 deny from 2a12:d5c0::/29
 deny from 2a12:2d40::/29
@@ -303,7 +305,14 @@ deny from 2a11:3c40::/31
 deny from 2a11:66c1::/32
 deny from 2a12:c180::/26
 deny from 2a01:5560::/32
+deny from 2a11:68c5::/32
+deny from 2a13:200::/29
+
+# RapidSeedbox Ltd
+deny from 2a10:34c0::/26
+deny from 2a10:3540::/26
 deny from 2a10:6500::/26
+deny from 2a0f:3040::/26
 
 # Google LLC Proxy
 deny from 2001:4860::/36
@@ -1059,7 +1068,6 @@ deny from 2a13:97c0::/29
 deny from 2a14:3bc0::/29
 deny from 2a14:5240::/29
 deny from 2a14:5640::/29
-
 
 # Galchenko Anna Viktorovna
 deny from 2a10:cbc0::/29
