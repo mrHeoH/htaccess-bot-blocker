@@ -129,6 +129,7 @@ deny from 35.71.64.0/18
 deny from 35.72.0.0/13
 deny from 37.19.206.0/23
 deny from 37.60.224.0/19
+deny from 40.68.0.0/14
 deny from 40.74.0.0/15
 deny from 40.76.0.0/14
 deny from 40.80.0.0/12
@@ -184,6 +185,7 @@ deny from 123.186.0.0/17
 deny from 134.209.0.0/16
 deny from 137.184.0.0/16
 deny from 138.97.216.0/22
+deny from 138.199.57.0/24
 deny from 143.198.0.0/16
 deny from 146.70.0.0/16
 deny from 146.190.0.0/16
@@ -210,12 +212,14 @@ deny from 185.153.151.0/24
 deny from 185.156.46.0/24
 deny from 185.164.121.0/24
 deny from 185.196.0.0/24
+deny from 185.242.4.0/22
 deny from 188.130.188.0/23
 deny from 192.42.116.0/22
 deny from 193.32.126.0/23
 deny from 193.176.211.0/24
 deny from 194.31.72.0/24
 deny from 194.38.20.0/24
+deny from 194.169.168.0/22
 deny from 195.82.146.0/23
 deny from 195.178.110.0/24
 deny from 195.181.160.0/20
@@ -228,9 +232,12 @@ deny from 205.210.31.0/24
 deny from 212.34.144.0/21
 deny from 212.118.52.0/22
 deny from 217.23.14.0/24
+deny from 217.114.43.0/24
 deny from 217.160.144.0/22
 deny from 217.160.148.0/23
 deny from 221.8.0.0/14
+
+deny from 212.193.33.178
 
 # IPv6: Отдельные провайдеры и хостинги
 deny from 2a11:e80::/32
@@ -307,11 +314,25 @@ deny from 2a12:c180::/26
 deny from 2a01:5560::/32
 deny from 2a11:68c5::/32
 deny from 2a13:200::/29
+deny from 2a11:bcc0::/29
+
+# SkyNet LLC
+deny from 2a06:4380::/29
+deny from 2a09:a200::/29
+deny from 2a0e:c4c0::/29
+deny from 2a0f:1800::/29
+deny from 2a0f:9d00::/29
+deny from 2a07:5340::/29
+deny from 2a0c:9480::/29
+deny from 2a0e:7f00::/29
+deny from 2a12:23c0::/29
+deny from 2a12:2940::/29
 
 # RapidSeedbox Ltd
 deny from 2a10:34c0::/26
 deny from 2a10:3540::/26
 deny from 2a10:6500::/26
+deny from 2a11:4c40::/26
 deny from 2a0f:3040::/26
 
 # Google LLC Proxy
@@ -1074,6 +1095,18 @@ deny from 2a10:cbc0::/29
 deny from 2a11:e380::/29
 deny from 2a12:70c0::/29
 deny from 2a13:7e00::/29
+
+# JCS Selectel
+deny from 2001:67c:6d0::/48
+deny from 2a06:1301:4210::/48
+deny from 2a0e:b900::/29
+deny from 2a0f:cdc6:2000::/44
+deny from 2a10:4900::/30
+deny from 2a10:4904::/32
+deny from 2a10:4906::/31
+deny from 2a11:5a44::/32
+deny from 2a11:9887::/32
+deny from 2a13:d207::/32
 
 # Network Management Ltd
 deny from 2a03:e2c0::/32
