@@ -130,6 +130,7 @@ deny from 35.72.0.0/13
 deny from 37.19.206.0/23
 deny from 37.60.224.0/19
 deny from 40.68.0.0/14
+deny from 40.64.0.0/13
 deny from 40.74.0.0/15
 deny from 40.76.0.0/14
 deny from 40.80.0.0/12
@@ -193,6 +194,7 @@ deny from 150.136.0.0/16
 deny from 154.26.128.0/20
 deny from 154.83.64.0/18
 deny from 155.4.0.0/16
+deny from 156.146.54.0/24
 deny from 157.90.0.0/16
 deny from 168.138.0.0/16
 deny from 162.55.0.0/16
@@ -211,6 +213,7 @@ deny from 185.153.196.0/22
 deny from 185.153.151.0/24
 deny from 185.156.46.0/24
 deny from 185.164.121.0/24
+deny from 185.177.72.0/24
 deny from 185.196.0.0/24
 deny from 185.242.4.0/22
 deny from 188.130.188.0/23
@@ -316,6 +319,9 @@ deny from 2a11:68c5::/32
 deny from 2a13:200::/29
 deny from 2a11:bcc0::/29
 deny from 2a14:9705::/32
+deny from 2404:8c80::/32
+deny from 2a11:8306::/32
+deny from 2a11:bcc6::/32
 
 # SkyNet LLC
 deny from 2a06:4380::/29
