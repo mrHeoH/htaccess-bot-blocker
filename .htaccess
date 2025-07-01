@@ -1,3 +1,4 @@
+# Update: 01.07.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -168,6 +169,7 @@ deny from 74.234.0.0/15
 deny from 74.226.128.0/19
 deny from 77.238.224.0/19
 deny from 77.238.231.0/24
+deny from 78.153.143.0/24
 deny from 79.137.194.0/23
 deny from 80.85.244.0/22
 deny from 84.17.56.0/21
@@ -176,6 +178,7 @@ deny from 84.247.144.0/20
 deny from 89.117.72.0/21
 deny from 89.187.160.0/19
 deny from 91.92.240.0/20
+deny from 93.95.96.0/21
 deny from 93.123.109.0/24
 deny from 102.129.252.0/24
 deny from 103.15.235.0/24
@@ -220,8 +223,10 @@ deny from 188.130.188.0/23
 deny from 192.42.116.0/22
 deny from 193.32.126.0/23
 deny from 193.176.211.0/24
+deny from 193.187.144.0/22
 deny from 194.31.72.0/24
 deny from 194.38.20.0/24
+deny from 194.67.208.0/20
 deny from 194.169.168.0/22
 deny from 195.82.146.0/23
 deny from 195.178.110.0/24
@@ -240,7 +245,10 @@ deny from 217.160.144.0/22
 deny from 217.160.148.0/23
 deny from 221.8.0.0/14
 
+# Замеченные временные прокси
 deny from 212.193.33.178
+deny from 84.47.174.0/23
+deny from 5.183.130.0/24
 
 # IPv6: Отдельные провайдеры и хостинги
 deny from 2a11:e80::/32
@@ -322,6 +330,8 @@ deny from 2a14:9705::/32
 deny from 2404:8c80::/32
 deny from 2a11:8306::/32
 deny from 2a11:bcc6::/32
+deny from 2a14:e603::/32
+deny from 2a0d:adc0::/29
 
 # SkyNet LLC
 deny from 2a06:4380::/29
@@ -484,6 +494,7 @@ deny from 2a0b:2d87::/32
 deny from 2a0e:8140::/29
 deny from 2a0e:cd40::/29
 deny from 2a0f:d000::/29
+deny from 46.8.154.0/23
 
 # LLC VPSville
 deny from 2a04:c100::/29
@@ -1186,6 +1197,44 @@ deny from 2a14:3bc0::/29
 deny from 2a14:5240::/29
 deny from 2a14:5640::/29
 
+# Mikhail Tonkonog / Aeza International LTD
+deny from 2a0b:4140:1000::/36
+deny from 2a0b:4140:2000::/35
+deny from 2a0b:4140:4000::/34
+deny from 2a0b:4140:8000::/36
+deny from 2a0e:b107:2780::/46
+deny from 2a0e:d602:1::/48
+deny from 2a0e:d602:2::/48
+deny from 2a0e:d606::/48
+deny from 2a0f:4f80::/29
+deny from 2a0f:cdc6:2020::/44
+deny from 2a11:fc80::/29
+deny from 2a12:5940:1::/48
+deny from 2a12:5940:3::/48
+deny from 2a12:5940:5::/48
+deny from 2a12:5940:7::/48
+deny from 2a12:5940:11::/48
+deny from 2a12:5940:18::/48
+deny from 2a12:5940:1000::/36
+deny from 2a12:5940:2000::/35
+deny from 2a12:5940:4000::/34
+deny from 2a12:5940:8000::/33
+
+# Moshonkin Ilia Sergeevich
+deny from 5.252.28.0/22
+deny from 31.12.92.0/22
+deny from 45.83.116.0/22
+deny from 45.88.148.0/22
+deny from 45.89.100.0/22
+deny from 45.92.124.0/22
+deny from 92.119.40.0/22
+deny from 109.68.210.0/23
+deny from 141.98.132.0/22
+deny from 185.117.28.0/23
+deny from 185.149.20.0/22
+deny from 185.166.160.0/22
+deny from 194.33.36.0/22
+
 # Galchenko Anna Viktorovna
 deny from 2a10:cbc0::/29
 deny from 2a11:e380::/29
@@ -1224,7 +1273,6 @@ deny from 2a09:6280:1000::/36
 deny from 2a09:6280:2000::/35
 deny from 2a09:6280:4000::/34
 deny from 2a09:6280:8000::/33
-deny from 2a09:6281::/32
 deny from 2a09:6282::/31
 deny from 2a09:6284::/30
 
