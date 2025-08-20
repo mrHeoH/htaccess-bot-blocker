@@ -1,4 +1,4 @@
-# Update: 08.08.2025
+# Update: 20.08.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -198,6 +198,7 @@ deny from 143.198.0.0/16
 deny from 146.70.0.0/16
 deny from 146.190.0.0/16
 deny from 150.136.0.0/16
+deny from 150.241.64.0/18
 deny from 154.26.128.0/20
 deny from 154.83.64.0/18
 deny from 155.4.0.0/16
@@ -222,6 +223,7 @@ deny from 185.153.151.0/24
 deny from 185.156.46.0/24
 deny from 185.164.121.0/24
 deny from 185.177.72.0/24
+deny from 185.184.77.0/24
 deny from 185.196.0.0/24
 deny from 185.200.170.0/24
 deny from 185.242.4.0/22
@@ -340,6 +342,7 @@ deny from 2a11:8306::/32
 deny from 2a11:bcc6::/32
 deny from 2a14:e603::/32
 deny from 2a0d:adc0::/29
+deny from 2a0d:d940:1400::/38
 
 # SkyNet LLC
 deny from 2a06:4380::/29
@@ -374,6 +377,13 @@ deny from 2a10:7500::/25
 deny from 2a10:7300::/26
 deny from 2a07:a300::/26
 deny from 2a0f:8100::/26
+
+# Hostkey
+deny from 2604:5940::/32
+deny from 2a06:5280::/29
+deny from 2a0f:3940::/29
+deny from 2a0f:39c0::/29
+deny from 2a11:4e80::/29
 
 # Google LLC Proxy
 deny from 2001:4860::/36
@@ -1096,6 +1106,16 @@ deny from 167.94.146.0/24
 deny from 167.248.133.0/24
 deny from 2602:80d:1000:b0cc:e::/80
 deny from 2620:96:e000:b0cc:e::/80
+
+# Internet Tekhnologii LLC
+deny from 45.11.124.0/22
+deny from 45.94.228.0/22
+deny from 45.129.204.0/22
+deny from 45.132.20.0/22
+deny from 45.133.32.0/22
+deny from 45.139.108.0/22
+deny from 45.139.168.0/22
+
 
 # IsphereLLC
 deny from 2a10:4100::/26
