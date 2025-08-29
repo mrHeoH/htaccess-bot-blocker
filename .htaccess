@@ -1,4 +1,4 @@
-# Update: 20.08.2025
+# Update: 29.08.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -343,6 +343,7 @@ deny from 2a11:bcc6::/32
 deny from 2a14:e603::/32
 deny from 2a0d:adc0::/29
 deny from 2a0d:d940:1400::/38
+deny from 2a06:e8c0::/29
 
 # SkyNet LLC
 deny from 2a06:4380::/29
