@@ -1,4 +1,4 @@
-# Update: 07.09.2025
+# Update: 16.09.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -117,8 +117,9 @@ deny from 20.40.0.0/13
 deny from 20.48.0.0/12
 deny from 20.33.0.0/16
 deny from 20.34.0.0/15
-deny from 20.128.0.0/16
 deny from 20.64.0.0/10
+deny from 20.128.0.0/16
+deny from 20.184.0.0/13
 deny from 23.27.110.0/24
 deny from 23.96.0.0/13
 deny from 23.105.224.0/19
@@ -157,6 +158,7 @@ deny from 45.88.192.0/20
 deny from 45.88.208.0/21
 deny from 45.136.56.0/22
 deny from 45.145.116.0/22
+deny from 45.149.172.0/22
 deny from 45.152.116.0/23
 deny from 45.227.254.0/24
 deny from 47.254.0.0/16
@@ -191,6 +193,7 @@ deny from 123.4.0.0/14
 deny from 123.186.0.0/17
 deny from 130.255.128.0/20
 deny from 134.209.0.0/16
+deny from 135.220.0.0/15
 deny from 137.184.0.0/16
 deny from 138.97.216.0/22
 deny from 138.199.57.0/24
@@ -201,6 +204,7 @@ deny from 150.136.0.0/16
 deny from 150.241.64.0/18
 deny from 154.26.128.0/20
 deny from 154.83.64.0/18
+deny from 154.213.160.0/20
 deny from 155.4.0.0/16
 deny from 156.146.54.0/24
 deny from 157.90.0.0/16
@@ -241,8 +245,10 @@ deny from 194.169.168.0/22
 deny from 195.82.146.0/23
 deny from 195.178.110.0/24
 deny from 195.181.160.0/20
+deny from 195.250.20.0/23
 deny from 196.251.80.0/21
 deny from 196.251.114.0/23
+deny from 196.251.116.0/22
 deny from 198.44.188.0/22
 deny from 199.168.96.0/21
 deny from 204.12.192.0/18
@@ -344,6 +350,7 @@ deny from 2a14:e603::/32
 deny from 2a0d:adc0::/29
 deny from 2a0d:d940:1400::/38
 deny from 2a06:e8c0::/29
+deny from 2a0b:4141::/32
 
 # ZTV Corp LLC
 deny from 2a11:1940::/29
@@ -384,6 +391,7 @@ deny from 2a10:7300::/26
 deny from 2a07:a300::/26
 deny from 2a0f:8100::/26
 deny from 2a0f:7f00::/29
+deny from 2a10:4e00::/26
 
 # Hostkey
 deny from 2604:5940::/32
@@ -1414,6 +1422,9 @@ deny from 2a12:5940:1000::/36
 deny from 2a12:5940:2000::/35
 deny from 2a12:5940:4000::/34
 deny from 2a12:5940:8000::/33
+
+# Mikhail Tonkonog / Unknown network
+deny from 2a13:2980::/26
 
 # Moshonkin Ilia Sergeevich
 deny from 5.252.28.0/22
