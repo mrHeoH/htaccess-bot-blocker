@@ -1,4 +1,4 @@
-# Update: 16.09.2025
+# Update: 20.09.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -351,6 +351,7 @@ deny from 2a0d:adc0::/29
 deny from 2a0d:d940:1400::/38
 deny from 2a06:e8c0::/29
 deny from 2a0b:4141::/32
+deny from 2a11:8940::/29
 
 # ZTV Corp LLC
 deny from 2a11:1940::/29
@@ -392,6 +393,8 @@ deny from 2a07:a300::/26
 deny from 2a0f:8100::/26
 deny from 2a0f:7f00::/29
 deny from 2a10:4e00::/26
+deny from 2a0f:1600::/24
+deny from 2a07:95c0::/26
 
 # Hostkey
 deny from 2604:5940::/32
@@ -1515,3 +1518,31 @@ deny from 2a0c:65c0::/29
 deny from 2a0c:6980::/29
 deny from 2a0c:f644::/30
 deny from 2a13:97c0::/29
+
+# Autonomous Nonprofit Organisation Russian Scientific-Research Institute for Public Networks
+deny from 2001:678:13::/48
+deny from 2a0c:a9c0::/30
+deny from 2a0c:a9c4::/31
+deny from 2a0c:a9c6::/32
+deny from 2a0c:a9c7::/47
+deny from 2a0c:a9c7:4::/46
+deny from 2a0c:a9c7:c::/46
+deny from 2a0c:a9c7:10::/44
+deny from 2a0c:a9c7:20::/43
+deny from 2a0c:a9c7:40::/42
+deny from 2a0c:a9c7:80::/41
+deny from 2a0c:a9c7:100::/42
+deny from 2a0c:a9c7:140::/46
+deny from 2a0c:a9c7:144::/47
+deny from 2a0c:a9c7:146::/48
+deny from 2a0c:a9c7:148::/45
+deny from 2a0c:a9c7:150::/46
+deny from 2a0c:a9c7:154::/47
+deny from 2a0c:a9c7:159::/48
+deny from 2a0c:a9c7:15a::/47
+deny from 2a0c:a9c7:15c::/46
+deny from 2a0c:a9c7:161::/48
+deny from 2a0c:a9c7:162::/47
+deny from 2a0c:a9c7:164::/47
+deny from 2a0c:a9c7:167::/48
+deny from 2a0c:a9c7:180::/41
