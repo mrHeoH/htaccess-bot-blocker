@@ -1,4 +1,4 @@
-# Update: 26.09.2025
+# Update: 29.09.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -157,6 +157,7 @@ deny from 45.88.0.0/17
 deny from 45.88.128.0/18
 deny from 45.88.192.0/20
 deny from 45.88.208.0/21
+deny from 45.117.55.0/24
 deny from 45.136.56.0/22
 deny from 45.145.116.0/22
 deny from 45.149.172.0/22
@@ -353,8 +354,12 @@ deny from 2a14:e603::/32
 deny from 2a0d:adc0::/29
 deny from 2a0d:d940:1400::/38
 deny from 2a06:e8c0::/29
-deny from 2a0b:4141::/32
 deny from 2a11:8940::/29
+
+# Partner Hosting LTD
+deny from 2a0b:4141::/32
+deny from 2a0c:9a40:9400::/47
+deny from 2a0c:9a40:9404::/47
 
 # ZTV Corp LLC
 deny from 2a11:1940::/29
@@ -399,6 +404,7 @@ deny from 2a10:4e00::/26
 deny from 2a0f:1600::/24
 deny from 2a07:95c0::/26
 deny from 2a13:9680::/29
+deny from 2a12:dc00::/26
 
 # Hostkey
 deny from 2604:5940::/32
@@ -1550,3 +1556,7 @@ deny from 2a0c:a9c7:162::/47
 deny from 2a0c:a9c7:164::/47
 deny from 2a0c:a9c7:167::/48
 deny from 2a0c:a9c7:180::/41
+
+# Hosting Technology Ltd (Vdsina VDS Hosting IPv6)
+deny from 2a0d:8480::/48
+deny from 2a0d:8480:2::/48
