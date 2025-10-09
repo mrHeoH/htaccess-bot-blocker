@@ -1,4 +1,4 @@
-# Update: 29.09.2025
+# Update: 09.10.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -165,6 +165,7 @@ deny from 45.152.116.0/23
 deny from 45.227.254.0/24
 deny from 47.254.0.0/16
 deny from 49.12.0.0/15
+deny from 51.68.0.0/16
 deny from 52.136.0.0/13
 deny from 52.145.0.0/16
 deny from 52.146.0.0/15
@@ -181,6 +182,7 @@ deny from 80.85.244.0/22
 deny from 84.17.56.0/21
 deny from 84.239.16.0/23
 deny from 84.247.144.0/20
+deny from 88.201.192.0/18
 deny from 89.117.72.0/21
 deny from 89.187.160.0/19
 deny from 89.251.0.0/24
@@ -195,6 +197,7 @@ deny from 103.82.240.0/22
 deny from 123.4.0.0/14
 deny from 123.186.0.0/17
 deny from 130.255.128.0/20
+deny from 134.122.128.0/19
 deny from 134.209.0.0/16
 deny from 135.220.0.0/15
 deny from 137.184.0.0/16
@@ -269,6 +272,10 @@ deny from 221.8.0.0/14
 deny from 212.193.33.178
 deny from 84.47.174.0/23
 deny from 5.183.130.0/24
+
+# PJSC MegaFon
+deny from 178.176.72.0/21
+deny from 31.173.64.0/19
 
 # IPv6: Отдельные провайдеры и хостинги
 deny from 2a11:e80::/32
@@ -355,6 +362,8 @@ deny from 2a0d:adc0::/29
 deny from 2a0d:d940:1400::/38
 deny from 2a06:e8c0::/29
 deny from 2a11:8940::/29
+deny from 2a0d:1ac3::/32
+deny from 2a00:be00::/32
 
 # Partner Hosting LTD
 deny from 2a0b:4141::/32
@@ -405,6 +414,7 @@ deny from 2a0f:1600::/24
 deny from 2a07:95c0::/26
 deny from 2a13:9680::/29
 deny from 2a12:dc00::/26
+deny from 2a0f:2f80::/29
 
 # Hostkey
 deny from 2604:5940::/32
