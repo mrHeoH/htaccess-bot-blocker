@@ -1,4 +1,4 @@
-# Update: 09.10.2025
+# Update: 25.10.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -220,6 +220,7 @@ deny from 170.106.0.0/16
 deny from 172.128.0.0/10
 deny from 172.200.0.0/13
 deny from 176.53.140.0/22
+deny from 176.65.132.0/22
 deny from 178.128.96.0/20
 deny from 178.128.240.0/20
 deny from 185.5.251.0/24
@@ -415,6 +416,7 @@ deny from 2a07:95c0::/26
 deny from 2a13:9680::/29
 deny from 2a12:dc00::/26
 deny from 2a0f:2f80::/29
+deny from 2a0f:3d86:1::/48
 
 # Hostkey
 deny from 2604:5940::/32
@@ -1570,3 +1572,31 @@ deny from 2a0c:a9c7:180::/41
 # Hosting Technology Ltd (Vdsina VDS Hosting IPv6)
 deny from 2a0d:8480::/48
 deny from 2a0d:8480:2::/48
+
+# Partner Hosting LTD
+deny from 2a0b:4141::/32
+deny from 2a0c:9a40:9400::/47
+deny from 2a0c:9a40:9404::/47
+
+# LLC Smart Ape
+deny from 31.177.108.0/22
+deny from 89.23.96.0/22
+deny from 89.23.100.0/23
+deny from 89.23.102.0/24
+deny from 91.219.148.0/22
+deny from 94.198.50.0/23
+deny from 94.198.52.0/22
+deny from 109.238.92.0/22
+deny from 152.89.216.0/22
+deny from 178.255.126.0/23
+deny from 185.9.144.0/22
+deny from 185.65.201.0/24
+deny from 185.130.248.0/22
+deny from 185.217.128.0/24
+deny from 188.127.224.0/20
+deny from 188.127.240.0/22
+deny from 188.127.244.0/23
+deny from 188.127.248.0/22
+deny from 188.127.253.0/24
+deny from 188.127.254.0/23
+deny from 213.171.16.0/21
