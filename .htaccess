@@ -1,4 +1,4 @@
-# Update: 29.10.2025
+# Update: 01.11.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -96,6 +96,7 @@ Allow from All
 # IPv4: отдельные провайдеры
 deny from 3.8.0.0/13
 deny from 3.16.0.0/13
+deny from 3.64.0.0/12
 deny from 3.104.0.0/13
 deny from 3.128.0.0/9
 deny from 4.160.0.0/11
@@ -189,6 +190,7 @@ deny from 89.251.0.0/24
 deny from 91.92.240.0/20
 deny from 93.95.96.0/21
 deny from 93.123.109.0/24
+deny from 101.32.0.0/16
 deny from 102.129.252.0/24
 deny from 103.15.235.0/24
 deny from 103.54.56.0/22
@@ -197,6 +199,7 @@ deny from 103.82.240.0/22
 deny from 123.4.0.0/14
 deny from 123.186.0.0/17
 deny from 130.255.128.0/20
+deny from 132.148.72.0/21
 deny from 134.122.128.0/19
 deny from 134.209.0.0/16
 deny from 135.220.0.0/15
@@ -215,6 +218,7 @@ deny from 155.4.0.0/16
 deny from 156.146.54.0/24
 deny from 156.146.54.0/23
 deny from 157.90.0.0/16
+deny from 162.0.208.0/20
 deny from 168.138.0.0/16
 deny from 162.55.0.0/16
 deny from 170.106.0.0/16
@@ -228,6 +232,7 @@ deny from 185.5.251.0/24
 deny from 185.7.214.0/24
 deny from 185.31.210.0/24
 deny from 185.44.76.0/22
+deny from 185.50.24.0/22
 deny from 185.86.93.0/24
 deny from 185.173.39.0/24
 deny from 185.153.196.0/22
@@ -418,6 +423,7 @@ deny from 2a13:9680::/29
 deny from 2a12:dc00::/26
 deny from 2a0f:2f80::/29
 deny from 2a0f:3d86:1::/48
+deny from 2a10:3680::/25
 
 # Hostkey
 deny from 2604:5940::/32
