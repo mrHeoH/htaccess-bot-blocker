@@ -1,4 +1,4 @@
-# Update: 01.11.2025
+# Update: 08.11.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -148,6 +148,8 @@ deny from 43.131.224.0/19
 deny from 43.135.128.0/18
 deny from 43.153.0.0/16
 deny from 43.156.0.0/15
+deny from 45.10.111.0/24
+deny from 45.11.95.0/24
 deny from 45.11.144.0/20
 deny from 45.11.160.0/19
 deny from 45.11.192.0/18
@@ -162,6 +164,7 @@ deny from 45.117.55.0/24
 deny from 45.136.56.0/22
 deny from 45.145.116.0/22
 deny from 45.149.172.0/22
+deny from 45.152.85.0/24
 deny from 45.152.116.0/23
 deny from 45.227.254.0/24
 deny from 47.254.0.0/16
@@ -196,6 +199,7 @@ deny from 103.15.235.0/24
 deny from 103.54.56.0/22
 deny from 103.77.214.0/23
 deny from 103.82.240.0/22
+deny from 103.196.8.0/23
 deny from 123.4.0.0/14
 deny from 123.186.0.0/17
 deny from 130.255.128.0/20
@@ -424,6 +428,8 @@ deny from 2a12:dc00::/26
 deny from 2a0f:2f80::/29
 deny from 2a0f:3d86:1::/48
 deny from 2a10:3680::/25
+deny from 2a0e:15c2::/32
+deny from 2a0e:5a80::/29
 
 # Hostkey
 deny from 2604:5940::/32
