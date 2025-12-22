@@ -1,4 +1,4 @@
-# Update: 08.11.2025
+# Update: 22.12.2025
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -194,6 +194,7 @@ deny from 91.92.240.0/20
 deny from 93.95.96.0/21
 deny from 93.123.109.0/24
 deny from 101.32.0.0/16
+deny from 101.33.48.0/20
 deny from 102.129.252.0/24
 deny from 103.15.235.0/24
 deny from 103.54.56.0/22
@@ -232,6 +233,7 @@ deny from 176.53.140.0/22
 deny from 176.65.132.0/22
 deny from 178.128.96.0/20
 deny from 178.128.240.0/20
+deny from 182.42.0.0/16
 deny from 185.5.251.0/24
 deny from 185.7.214.0/24
 deny from 185.31.210.0/24
@@ -430,6 +432,8 @@ deny from 2a0f:3d86:1::/48
 deny from 2a10:3680::/25
 deny from 2a0e:15c2::/32
 deny from 2a0e:5a80::/29
+deny from 2a13:540::/29
+deny from 2a0f:3d83::/32
 
 # Hostkey
 deny from 2604:5940::/32
@@ -1464,6 +1468,7 @@ deny from 2a12:5940:8000::/33
 
 # Mikhail Tonkonog / Unknown network
 deny from 2a13:2980::/26
+deny from 2a11:4b44::/30
 
 # Moshonkin Ilia Sergeevich
 deny from 5.252.28.0/22
@@ -1614,3 +1619,6 @@ deny from 188.127.248.0/22
 deny from 188.127.253.0/24
 deny from 188.127.254.0/23
 deny from 213.171.16.0/21
+
+# Vitaly Shchipov
+deny from 89.19.218.0/24
