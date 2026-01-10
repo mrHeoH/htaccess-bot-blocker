@@ -1,4 +1,4 @@
-# Update: 04.01.2026
+# Update: 10.01.2026
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -295,6 +295,8 @@ deny from 5.183.130.0/24
 # PJSC MegaFon
 deny from 178.176.72.0/21
 deny from 31.173.64.0/19
+## Тульская область
+deny from 2a03:d004::/40
 
 # IPv6: Отдельные провайдеры и хостинги
 deny from 2a11:e80::/32
@@ -444,6 +446,10 @@ deny from 2a0e:15c6::/32
 deny from 2a0a:2d02::/38
 deny from 2a0a:2d02:8000::/33
 deny from 2a0a:2d02:7000::/39
+deny from 2a0a:2d02:6e00::/40
+
+# Rostelecom
+deny from 2a01:620::/32
 
 # Hostkey
 deny from 2604:5940::/32
