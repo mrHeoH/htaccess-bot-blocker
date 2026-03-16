@@ -181,7 +181,6 @@ deny from 52.146.0.0/15
 deny from 52.148.0.0/14
 deny from 52.152.0.0/13
 deny from 52.160.0.0/11
-deny from 66.249.64.0/19
 deny from 74.176.0.0/14
 deny from 74.224.0.0/14
 deny from 74.226.128.0/19
@@ -469,9 +468,6 @@ deny from 2a06:5280::/29
 deny from 2a0f:3940::/29
 deny from 2a0f:39c0::/29
 deny from 2a11:4e80::/29
-
-# Google LLC Proxy
-deny from 2001:4860::/36
 
 # Yandex.Cloud
 deny from 178.154.192.0/18
