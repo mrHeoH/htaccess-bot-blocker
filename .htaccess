@@ -1,4 +1,4 @@
-# Update: 10.03.2026
+# Update: 14.06.2026
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -107,7 +107,7 @@ deny from 13.96.0.0/13
 deny from 13.104.0.0/14
 deny from 13.208.0.0/12
 deny from 13.224.0.0/12
-deny from 13.200.0.0/13
+deny from 13.200.0.0/14
 deny from 13.232.0.0/13
 deny from 15.188.0.0/16
 deny from 20.192.0.0/10
@@ -185,6 +185,8 @@ deny from 74.176.0.0/14
 deny from 74.224.0.0/14
 deny from 74.226.128.0/19
 deny from 74.234.0.0/15
+deny from 74.248.0.0/15
+deny from 75.119.128.0/19
 deny from 77.238.224.0/19
 deny from 77.238.231.0/24
 deny from 78.153.140.0/24
@@ -201,6 +203,7 @@ deny from 89.251.0.0/24
 deny from 91.92.240.0/20
 deny from 93.95.96.0/21
 deny from 93.123.109.0/24
+deny from 95.84.128.0/17
 deny from 101.32.0.0/16
 deny from 101.33.48.0/20
 deny from 102.129.252.0/24
@@ -241,6 +244,7 @@ deny from 172.128.0.0/10
 deny from 172.200.0.0/13
 deny from 176.53.140.0/22
 deny from 176.65.132.0/22
+deny from 176.103.88.0/21
 deny from 176.126.103.0/24
 deny from 178.128.96.0/20
 deny from 178.128.240.0/20
@@ -251,6 +255,7 @@ deny from 185.31.210.0/24
 deny from 185.44.76.0/22
 deny from 185.50.24.0/22
 deny from 185.86.93.0/24
+deny from 185.125.24.0/22
 deny from 185.135.80.0/22
 deny from 185.153.196.0/22
 deny from 185.153.151.0/24
@@ -393,6 +398,8 @@ deny from 2a11:8940::/29
 deny from 2a0d:1ac3::/32
 deny from 2a00:be00::/32
 deny from 2a09:bac6::/32
+deny from 2a12:bec4:1800::/37
+deny from 2600:1f16::/34
 
 # Partner Hosting LTD
 deny from 2a0b:4141::/32
@@ -1403,7 +1410,9 @@ deny from 2a10:4700::/29
 deny from 2a11:4b41::/32
 deny from 2a11:4b42::/32
 deny from 2a12:4300::/29
+deny from 45.93.14.0/23
 deny from 85.142.40.0/21
+deny from 85.142.48.0/22
 
 # Mikhail Tonkonog / Start LLC
 deny from 2a03:220:8000::/34
@@ -1493,6 +1502,7 @@ deny from 2a12:5940:8000::/33
 # Mikhail Tonkonog / Unknown network
 deny from 2a13:2980::/26
 deny from 2a11:4b44::/30
+deny from 2a10:4b00::/26
 
 # Moshonkin Ilia Sergeevich
 deny from 5.252.28.0/22
@@ -1646,3 +1656,6 @@ deny from 213.171.16.0/21
 
 # Vitaly Shchipov
 deny from 89.19.218.0/24
+
+# The Center of Dedicated Servers LLC
+deny from 2a0b:e980::/29
