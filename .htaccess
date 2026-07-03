@@ -1,4 +1,4 @@
-# Update: 21.06.2026
+# Update: 03.07.2026
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -1510,6 +1510,7 @@ deny from 2a12:5940:8000::/33
 deny from 2a13:2980::/26
 deny from 2a11:4b44::/30
 deny from 2a10:4b00::/26
+deny from 2a11:b180::/25
 
 # Moshonkin Ilia Sergeevich
 deny from 5.252.28.0/22
