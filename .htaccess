@@ -1,4 +1,4 @@
-# Update: 03.07.2026
+# Update: 10.09.2026
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -130,6 +130,8 @@ deny from 31.28.224.0/19
 deny from 34.32.0.0/11
 deny from 34.120.0.0/13
 deny from 34.192.0.0/10
+deny from 34.208.0.0/12
+deny from 34.240.0.0/12
 deny from 35.80.0.0/12
 deny from 35.71.128.0/17
 deny from 35.71.64.0/18
@@ -176,6 +178,7 @@ deny from 45.227.254.0/24
 deny from 47.254.0.0/16
 deny from 49.12.0.0/15
 deny from 49.51.0.0/16
+deny from 50.6.128.0/17
 deny from 51.68.0.0/16
 deny from 51.107.0.0/16
 deny from 52.136.0.0/13
@@ -191,6 +194,7 @@ deny from 74.226.128.0/19
 deny from 74.234.0.0/15
 deny from 74.248.0.0/15
 deny from 75.119.128.0/19
+deny from 77.90.185.0/24
 deny from 77.238.224.0/19
 deny from 77.238.231.0/24
 deny from 78.153.140.0/24
@@ -207,6 +211,7 @@ deny from 89.251.0.0/24
 deny from 91.92.240.0/20
 deny from 93.95.96.0/21
 deny from 93.123.109.0/24
+deny from 94.154.43.0/24
 deny from 95.84.128.0/17
 deny from 101.32.0.0/16
 deny from 101.33.48.0/20
@@ -243,6 +248,7 @@ deny from 157.90.0.0/16
 deny from 161.118.0.0/16
 deny from 162.0.208.0/20
 deny from 168.138.0.0/16
+deny from 162.158.0.0/18
 deny from 162.55.0.0/16
 deny from 170.106.0.0/16
 deny from 172.128.0.0/10
@@ -407,6 +413,7 @@ deny from 2a12:bec4:1800::/37
 deny from 2600:1f16::/34
 deny from 2a13:9240::/29
 deny from 2401:4900:1c88::/46
+deny from 2a11:ec0::/29
 
 # Partner Hosting LTD
 deny from 2a0b:4141::/32
@@ -472,6 +479,8 @@ deny from 2a0a:2d02:6e00::/40
 deny from 2a10:3240::/26
 deny from 2a06:a600::/26
 deny from 2a0f:3640::/26
+deny from 2a13:e103::/32
+deny from 2a0e:f602::/32
 
 # Rostelecom
 deny from 2a01:620::/32
