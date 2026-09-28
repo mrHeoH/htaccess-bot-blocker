@@ -1,4 +1,4 @@
-# Update: 10.09.2026
+# Update: 28.09.2026
 RewriteEngine on
 
 # Блокировка ботов и сканеров по user agent. Последний - те, у кого нет реферера
@@ -77,6 +77,9 @@ RewriteCond %{HTTP_USER_AGENT} ^(.*)Timpibot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)CCleaner(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)Barkrowler(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)Amazonbot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)tphotobot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)ExaSearchBot(.*)$ [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^(.*)BacklinksExtendedBot(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)leakix\.net(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)ads\.txt(.*)$ [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^(.*)MegaIndex\.ru(.*)$ [NC]
@@ -174,6 +177,7 @@ deny from 45.148.10.0/24
 deny from 45.149.172.0/22
 deny from 45.152.85.0/24
 deny from 45.152.116.0/23
+deny from 45.156.128.0/22
 deny from 45.227.254.0/24
 deny from 47.254.0.0/16
 deny from 49.12.0.0/15
